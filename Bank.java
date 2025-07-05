@@ -2,8 +2,6 @@ import java.util.ArrayList;
 
 public class Bank {
 
-    static final String bankName = "Siddhartha Bank";
-
     ArrayList<Account> accounts = new ArrayList<>();
 
     public void addAccount(Account account){
