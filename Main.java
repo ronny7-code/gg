@@ -16,5 +16,10 @@ public class Main {
             System.out.println(account);
         }
 
+        bank.depositAmount(acc1, 10000);
+
+        bank.depositAmount(acc2, 10000);
+        bank.withdrawAmount(acc2, 5000); 
+
     }
 }
