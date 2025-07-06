@@ -1,4 +1,3 @@
-
 public class Account {
 
     String name;
