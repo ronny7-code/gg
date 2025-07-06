@@ -21,7 +21,7 @@ public class Account {
         }
         else{
             balance += amount;
-            System.out.println("\nRs." + amount + " deposited in "+ name + "'s account");
+            System.out.println("\nRs." + amount + " deposited in "+ this.name + "'s account");
             System.out.println(this.name + "'s current balance is Rs." + balance);
         }
     }
@@ -34,7 +34,7 @@ public class Account {
         }
         else{
             balance -= amount;
-            System.out.println("\nRs." + amount + " withdrawn from "+ name + "'s account");
+            System.out.println("\nRs." + amount + " withdrawn from "+ this.name + "'s account");
             System.out.println(this.name + "'s current balance is Rs." + balance);
         }
     }
