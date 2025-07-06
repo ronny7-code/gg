@@ -16,33 +16,35 @@ public class Account {
     public void deposit(double amount){
 
         if(amount <= 0){
-            System.out.println("Amount cannot be 0 or less than 0");
+            System.out.println("\nYou cannot deposit amount equal or less than Rs.0");
+            System.out.println(this.name + "'s current balance is Rs." + balance);
         }
         else{
             balance += amount;
-            System.out.println("Rs." + amount + " deposited in your account");
-            System.out.println("Your current balance is Rs." + balance);
+            System.out.println("\nRs." + amount + " deposited in "+ name + "'s account");
+            System.out.println(this.name + "'s current balance is Rs." + balance);
         }
     }
 
     public void withdraw(double amount){
 
         if(balance < amount){
-            System.out.println("Insufficient balance! ");
+            System.out.println("\nInsufficient balance! ");
+            System.out.println(this.name + "'s current balance is Rs." + balance);
         }
         else{
             balance -= amount;
-            System.out.println("Rs." + amount + " withdrawn from your account");
-            System.out.println("Your current balance is Rs." + balance);
+            System.out.println("\nRs." + amount + " withdrawn from "+ name + "'s account");
+            System.out.println(this.name + "'s current balance is Rs." + balance);
         }
     }
 
     public void showAccountInfo(){
-        System.out.println("Account Details: ");
-        System.out.println("\nName : " + name);
-        System.out.println("\nBand ID : " + bankId);
-        System.out.println("\nLocation : " + location);
-        System.out.println("Your current balance is Rs." + balance + "\n");
+        System.out.println("\nAccount Details: ");
+        System.out.println("Name : " + name);
+        System.out.println("Band ID : " + bankId);
+        System.out.println("Location : " + location);
+        System.out.println(this.name + "'s current balance is Rs." + balance + "\n");
     }
 
 }

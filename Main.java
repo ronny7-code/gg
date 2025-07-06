@@ -11,10 +11,14 @@ public class Main {
         bank.addAccount(acc2);
         bank.addAccount(acc3);
 
+        bank.depositAmount(acc1, 10000);
+        
+        bank.depositAmount(acc2, 15000);
+        bank.withdrawAmount(acc2, 5000);
 
-        for(Account account : bank.showAccount()){
-            System.out.println(account);
-        }
+        bank.depositAmount(acc3, 0);
+
+        bank.showAccount();
 
     }
 }

@@ -20,8 +20,10 @@ public class Bank {
         account.withdraw(amount);
     }
 
-   public ArrayList<Account> showAccount(){
-        return accounts;
-   }
+    public void showAccount(){
+        for(Account acc : accounts){
+            acc.showAccountInfo();
+        }
+    }
 
 }
