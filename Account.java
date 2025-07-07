@@ -41,7 +41,7 @@ public class Account {
     public void showAccountInfo(){
         System.out.println("\nAccount Details: ");
         System.out.println("Name : " + name);
-        System.out.println("Band ID : " + bankId);
+        System.out.println("Bank ID : " + bankId);
         System.out.println("Location : " + location);
         System.out.println(this.name + "'s current balance is Rs." + balance + "\n");
     }
